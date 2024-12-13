@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Copilot as Homepage",
+  "description": "Redirects all new tabs to https://copilot.microsoft.com",
+  "version": "1.0",
+  "permissions": [
+    "tabs"
+  ],
+  "chrome_url_overrides": {
+    "newtab": "redirect.html"
+  },
+  "host_permissions": [
+    "https://copilot.microsoft.com/"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["redirect.js"],
+      "matches": ["*://*/*"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
