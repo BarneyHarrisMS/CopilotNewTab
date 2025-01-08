@@ -3,9 +3,6 @@
   "name": "Copilot as Homepage",
   "description": "Redirects all new tabs to https://copilot.microsoft.com",
   "version": "1.0",
-  "permissions": [
-    "tabs"
-  ],
   "chrome_url_overrides": {
     "newtab": "redirect.html"
   },
