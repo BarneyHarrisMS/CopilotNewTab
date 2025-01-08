@@ -1,13 +1,13 @@
 {
   "manifest_version": 3,
   "name": "Copilot as Homepage",
-  "description": "Redirects all new tabs to https://copilot.microsoft.com",
+  "description": "Redirects all new tabs to https://m365.cloud.microsoft/chat",
   "version": "1.1",
   "chrome_url_overrides": {
     "newtab": "redirect.html"
   },
   "host_permissions": [
-    "https://copilot.microsoft.com/"
+    "https://m365.cloud.microsoft/chat"
   ],
   "web_accessible_resources": [
     {
